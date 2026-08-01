@@ -162,13 +162,14 @@ After creating the EC2 instance, I installed Docker, connected it with Amazon EC
 
 Commands used:
 
-```bash
-docker pull <ECR_IMAGE_URL>
+# Pull the Docker image from Amazon ECR
+docker pull 792641153794.dkr.ecr.ap-south-1.amazonaws.com/devops-demo-app:1
 
+# Run the Docker Container
 docker run -d \
 --name devops-demo-app \
 -p 3000:3000 \
-<ECR_IMAGE_URL>
+792641153794.dkr.ecr.ap-south-1.amazonaws.com/devops-demo-app:1
 ```
 
 ---
